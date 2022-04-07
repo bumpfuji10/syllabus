@@ -1,3 +1,3 @@
 class Teacher < ApplicationRecord
-  has_one :subject
+  belongs_to :subject, foreign_key: "subject_id"
 end

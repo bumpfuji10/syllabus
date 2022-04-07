@@ -4,8 +4,9 @@ module Api
 
       def index
         subjects = Subject.all
-        render status: 200, json: { subjects: subjects }
+        render json: subjects, serializer: SubjectSerializer
       end
+
     end
   end
 end

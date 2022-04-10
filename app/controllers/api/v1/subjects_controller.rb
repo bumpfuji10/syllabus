@@ -4,7 +4,7 @@ module Api
 
       def index
         subjects = Subject.all
-        render json: subjects, serializer: SubjectSerializer
+        render json: subjects
       end
 
     end
